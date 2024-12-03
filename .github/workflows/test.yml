@@ -17,7 +17,7 @@ jobs:
       uses: actions/setup-java@v2
       with:
         java-version: '17'
-        distribution: ''  # Sử dụng openjdk thay vì adoptium
+        distribution: 'zulu'
 
     - name: Run tests with Maven
       run: mvn test  # Chỉ chạy lệnh test, không build lại dự án
