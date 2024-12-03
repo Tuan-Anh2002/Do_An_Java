@@ -18,6 +18,9 @@ jobs:
       with:
         java-version: '17'
         distribution: 'zulu'
+        
+    - name: Install dependencies
+      run: mvn clean install
 
     - name: Run tests with Maven
       run: mvn test  # Chỉ chạy lệnh test, không build lại dự án
